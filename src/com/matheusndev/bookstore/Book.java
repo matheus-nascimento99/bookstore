@@ -4,7 +4,7 @@ import java.time.LocalDateTime;
 import java.util.UUID;
 
 public class Book {
-    private UUID id;
+    private String id;
     private String title;
     private Author author;
     private boolean isAvailable;
@@ -12,10 +12,11 @@ public class Book {
     private LocalDateTime updatedAt;
 
     public Book(
+                String id,
                 String title,
                 Author author
             ) {
-        this.id = UUID.randomUUID();
+        this.id = id;
         this.title = title;
         this.author = author;
         this.isAvailable = true;
@@ -23,7 +24,7 @@ public class Book {
         this.updatedAt = LocalDateTime.now();
     }
 
-    public UUID getId() {
+    public String getId() {
         return id;
     }
 

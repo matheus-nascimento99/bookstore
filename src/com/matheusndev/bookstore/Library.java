@@ -7,11 +7,26 @@ public class Library {
     private List<Book> books = new ArrayList<>();
     private List<Author> authors = new ArrayList<>();
     private List<Loan> loans = new ArrayList<>();
+    private List<Client> clients = new ArrayList<>();
 
     public List<Book> getAvailableBooks(){
         List<Book> availableBooks = this.books.stream().filter(book -> book.isAvailable()).toList();
 
         return availableBooks;
+    }
+
+    public List<Book> getUnavailableBooks(){
+        List<Book> availableBooks = this.books.stream().filter(book -> !book.isAvailable()).toList();
+
+        return availableBooks;
+    }
+
+    public List<Client> getClients() {
+        return clients;
+    }
+
+    public List<Loan> getLoans() {
+        return loans;
     }
 
     public void createBook(Book book){
