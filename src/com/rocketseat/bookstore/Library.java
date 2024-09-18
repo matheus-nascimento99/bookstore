@@ -7,4 +7,8 @@ public class Library {
     private List<Book> books = new ArrayList<>();
     private List<Author> authors = new ArrayList<>();
     private List<Loan> loans = new ArrayList<>();
+
+    public List<Book> getBooks(){
+        return this.books;
+    }
 }
