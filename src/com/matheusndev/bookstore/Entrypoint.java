@@ -1,4 +1,4 @@
-package com.rocketseat.bookstore;
+package com.matheusndev.bookstore;
 
 public class Entrypoint {
     public static void main(String[] args){

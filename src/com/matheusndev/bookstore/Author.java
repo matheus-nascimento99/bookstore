@@ -1,4 +1,4 @@
-package com.rocketseat.bookstore;
+package com.matheusndev.bookstore;
 
 import java.time.LocalDate;
 import java.util.UUID;
