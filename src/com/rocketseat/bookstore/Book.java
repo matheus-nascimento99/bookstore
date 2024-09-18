@@ -13,13 +13,12 @@ public class Book {
 
     public Book(
                 String title,
-                Author author,
-                boolean isAvailable
+                Author author
             ) {
         this.id = UUID.randomUUID();
         this.title = title;
         this.author = author;
-        this.isAvailable = isAvailable;
+        this.isAvailable = true;
         this.createdAt = LocalDateTime.now();
         this.updatedAt = LocalDateTime.now();
     }
