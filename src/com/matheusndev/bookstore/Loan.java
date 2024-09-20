@@ -4,24 +4,23 @@ import java.time.LocalDateTime;
 import java.util.UUID;
 
 public class Loan {
-    private String id;
+    private UUID id;
     private Book book;
     private Client client;
     private LocalDateTime borrowedIn;
     private LocalDateTime returnedAt;
 
     public Loan(
-            String id,
             Book book,
             Client client
     ) {
-        this.id = id;
+        this.id = UUID.randomUUID();
         this.book = book;
         this.client = client;
         this.borrowedIn = LocalDateTime.now();
     }
 
-    public String getId() {
+    public UUID getId() {
         return id;
     }
 
